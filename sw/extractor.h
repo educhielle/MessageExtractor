@@ -6,9 +6,10 @@ namespace extractor
 {
 
 #ifndef DEBUG
-#define DEBUG true
-#define WIDTH 8 // bytes
+#define DEBUG false
 #endif
+
+#define WIDTH 8 // bytes
 
 struct ExtractorOutput
 {
@@ -17,7 +18,7 @@ struct ExtractorOutput
     uint8_t keep; // how many bytes are valid
     uint8_t divider; // how many bytes belong to payload 2
     bool last; // it is the last part of the payload
-    bool done; // signalized the delivery of all payloads of a stream
+    bool done; // signalizes the delivery of all payloads of a stream
     ExtractorOutput() : ExtractorOutput(false, 0, 0, 0, false, false) {}
     ExtractorOutput(bool v, uint64_t p, uint8_t k, uint8_t div, bool l, bool d) :
         valid(v), payload(p), keep(k), divider(div), last(l), done(d) {}

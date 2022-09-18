@@ -14,4 +14,4 @@ template <class T> T get(uint64_t data, int firstByte, int lastByte);
 
 } // bitmanip
 
-#include "bitmap.hpp" // template functions
+#include "bitmanip.hpp" // template functions

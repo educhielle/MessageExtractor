@@ -1,4 +1,5 @@
-#include <iostream>
+#include "extractor.h"
+
 #include <iomanip>
 #include <vector>
 #include "bitmanip.h"
@@ -6,31 +7,17 @@
 using namespace bitmanip;
 using namespace std;
 
-#define WIDTH 8 // bytes
-
-#ifndef DEBUG
-#define DEBUG true
-#endif
-
-struct State
+namespace extractor
 {
-    uint16_t msgCount = 0;
-    uint16_t msgLength = 0;
-    bool isMsgLengthIncomplete = false;
-} state;
 
-struct Output
+State state;
+
+ostream & operator<<(ostream & os, const ExtractorOutput & output)
 {
-    bool valid; // the output has new data
-    uint64_t payload;
-    uint8_t keep; // how many bytes are valid
-    uint8_t divider; // how many bytes belong to payload 2
-    bool last; // it is the last part of the payload
-    bool done; // signalized the delivery of all payloads of a stream
-    Output() : Output(false, 0, 0, 0, false, false) {}
-    Output(bool v, uint64_t p, uint8_t k, uint8_t div, bool l, bool d) :
-        valid(v), payload(p), keep(k), divider(div), last(l), done(d) {}
-};
+    return os << output.valid << " " << output.last << " " << output.done
+        << " " << int(output.keep) << " " << int(output.divider)
+        << " " << setw(16) << output.payload;
+}
 
 ostream & operator<<(ostream & os, const State & state)
 {
@@ -39,44 +26,14 @@ ostream & operator<<(ostream & os, const State & state)
         << " " << state.isMsgLengthIncomplete;
 }
 
-ostream & operator<<(ostream & os, const Output & output)
-{
-    return os << output.valid << " " << output.last << " " << output.done
-        << " " << int(output.keep) << " " << int(output.divider)
-        << " " << setw(16) << output.payload;
-}
-
-Output extractor(bool valid, uint64_t data, bool last);
-
-int main()
-{
-    cout << hex << setfill('0');
-    // cout << "V L D K D PAYLOAD\n";
-    if (DEBUG)
-    {
-        cout << "TP | MCNT MLEN I | V L D K D PAYLOAD\n";
-        cout << "------------------------------------\n";
-    }
-    vector<uint64_t> data_vector{ 0x0003001388990000, 0x0123456789abcdef, 0x00feeddeadc00000,
-                                  0x0a00082233445566, 0x880000000a000000, 0x8746518494105156};
-    for (int i=0; i<data_vector.size(); i++)
-    {
-        bool valid = true;
-        bool last = i == data_vector.size()-1;
-        auto & data = data_vector[i];
-        auto output = extractor(valid, data, last);
-        // cout << output << '\n';
-    }
-}
-
-Output extractor(bool valid, uint64_t data, bool last)
+ExtractorOutput extract(bool valid, uint64_t data, bool last)
 {
     if (valid) // consider only valid inputs
     {
         if (!state.msgCount) // beginning of package
         {
             state.msgCount = get<int16_t>(data, WIDTH-2, WIDTH-1); // get message count
-            if (!state.msgCount) return Output(); // the message count informed is zero
+            if (!state.msgCount) return ExtractorOutput(); // the message count informed is zero
 
             state.msgLength = get<int16_t>(data, WIDTH-4, WIDTH-3); // get message length
             if (DEBUG) cout << "1D | " << state << flush;
@@ -90,7 +47,7 @@ Output extractor(bool valid, uint64_t data, bool last)
 
             // outputing a 4-byte part of the payload
             // more of the payload to come in the next cycle(s)
-            Output output(true, payload, nBytes, 0, false, false);
+            ExtractorOutput output(true, payload, nBytes, 0, false, false);
             if (DEBUG) cout << " | " << output << '\n';
             return output;
         }
@@ -121,7 +78,7 @@ Output extractor(bool valid, uint64_t data, bool last)
                 state.msgLength -= nBytes;
 
                 // more of the payload to come in the next cycle(s)
-                Output output(true, payload, nBytes, 0, false, false);
+                ExtractorOutput output(true, payload, nBytes, 0, false, false);
                 if (DEBUG) cout << " | " << output << '\n';
                 return output;
 
@@ -135,7 +92,7 @@ Output extractor(bool valid, uint64_t data, bool last)
                 auto done = !state.msgCount;
                 auto payload = get<uint64_t>(data, 0, WIDTH-1);
 
-                Output output(true, payload, WIDTH, 0, last, done);
+                ExtractorOutput output(true, payload, WIDTH, 0, last, done);
                 if (DEBUG) cout << " | " << output << '\n';
                 return output;
             }
@@ -171,13 +128,15 @@ Output extractor(bool valid, uint64_t data, bool last)
                     }
                 }
 
-                Output output(true, payload, keep, divider, last, done);
+                ExtractorOutput output(true, payload, keep, divider, last, done);
                 if (DEBUG) cout << " | " << output << '\n';
                 return output;
             }
         }
     }
-    Output output; // no valid input
+    ExtractorOutput output; // no valid input
     if (DEBUG) cout << "!! | " << state << " | " << output << '\n';
     return output;
 }
+
+} // extractor

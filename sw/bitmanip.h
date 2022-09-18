@@ -10,8 +10,7 @@ namespace bitmanip
 #define SHORT_SIZE 16
 #define SHORT_MASK 0xFFFF
 
-uint8_t getByte(uint64_t data, int idx);
-uint16_t getShort(uint64_t data, int idx);
+template <class T> T get(uint64_t data, int firstByte, int lastByte);
 
 } // bitmanip
 

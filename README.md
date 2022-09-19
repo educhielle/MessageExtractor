@@ -27,6 +27,6 @@ It outputs the payload once it is complete.
 A top module called MessageExtractor does the interconnection.
 
 Operating range:
-- Message count: the MessageExtractor supports any 2-byte message count, i.e., the message count range is [0 to 65535].
+- Message count: the MessageExtractor supports any 2-byte message count, i.e., the message count range is [0, 65535].
 - Message length: the payload size must be from 8 bytes to 65535 bytes ([8, 65535]).
 - No fail safe mechanism is implemented for out of range operation.

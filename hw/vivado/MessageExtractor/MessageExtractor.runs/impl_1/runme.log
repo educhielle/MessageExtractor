@@ -1,0 +1,694 @@
+
+*** Running vivado
+    with args -log MessageExtractor.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source MessageExtractor.tcl -notrace
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source MessageExtractor.tcl -notrace
+Command: link_design -top MessageExtractor -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new/const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 583.945 ; gain = 306.477
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.392 . Memory (MB): peak = 587.582 ; gain = 3.637
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17040d95f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 13b48de82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 101e2d275
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 72 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 101e2d275
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 101e2d275
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1091.324 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 106c0f3ac
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 1091.324 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 16051f998
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.324 ; gain = 507.379
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.runs/impl_1/MessageExtractor_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file MessageExtractor_drc_opted.rpt -pb MessageExtractor_drc_opted.pb -rpx MessageExtractor_drc_opted.rpx
+Command: report_drc -file MessageExtractor_drc_opted.rpt -pb MessageExtractor_drc_opted.pb -rpx MessageExtractor_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.runs/impl_1/MessageExtractor_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1091.324 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 965b4fe4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1091.324 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (259) is greater than number of available sites (200).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 200 sites available on device, but needs 259 sites.
+	Term: payload[0]
+	Term: payload[1]
+	Term: payload[2]
+	Term: payload[3]
+	Term: payload[4]
+	Term: payload[5]
+	Term: payload[6]
+	Term: payload[7]
+	Term: payload[8]
+	Term: payload[9]
+	Term: payload[10]
+	Term: payload[11]
+	Term: payload[12]
+	Term: payload[13]
+	Term: payload[14]
+	Term: payload[15]
+	Term: payload[16]
+	Term: payload[17]
+	Term: payload[18]
+	Term: payload[19]
+	Term: payload[20]
+	Term: payload[21]
+	Term: payload[22]
+	Term: payload[23]
+	Term: payload[24]
+	Term: payload[25]
+	Term: payload[26]
+	Term: payload[27]
+	Term: payload[28]
+	Term: payload[29]
+	Term: payload[30]
+	Term: payload[31]
+	Term: payload[32]
+	Term: payload[33]
+	Term: payload[34]
+	Term: payload[35]
+	Term: payload[36]
+	Term: payload[37]
+	Term: payload[38]
+	Term: payload[39]
+	Term: payload[40]
+	Term: payload[41]
+	Term: payload[42]
+	Term: payload[43]
+	Term: payload[44]
+	Term: payload[45]
+	Term: payload[46]
+	Term: payload[47]
+	Term: payload[48]
+	Term: payload[49]
+	Term: payload[50]
+	Term: payload[51]
+	Term: payload[52]
+	Term: payload[53]
+	Term: payload[54]
+	Term: payload[55]
+	Term: payload[56]
+	Term: payload[57]
+	Term: payload[58]
+	Term: payload[59]
+	Term: payload[60]
+	Term: payload[61]
+	Term: payload[62]
+	Term: payload[63]
+	Term: payload[64]
+	Term: payload[65]
+	Term: payload[66]
+	Term: payload[67]
+	Term: payload[68]
+	Term: payload[69]
+	Term: payload[70]
+	Term: payload[71]
+	Term: payload[72]
+	Term: payload[73]
+	Term: payload[74]
+	Term: payload[75]
+	Term: payload[76]
+	Term: payload[77]
+	Term: payload[78]
+	Term: payload[79]
+	Term: payload[80]
+	Term: payload[81]
+	Term: payload[82]
+	Term: payload[83]
+	Term: payload[84]
+	Term: payload[85]
+	Term: payload[86]
+	Term: payload[87]
+	Term: payload[88]
+	Term: payload[89]
+	Term: payload[90]
+	Term: payload[91]
+	Term: payload[92]
+	Term: payload[93]
+	Term: payload[94]
+	Term: payload[95]
+	Term: payload[96]
+	Term: payload[97]
+	Term: payload[98]
+	Term: payload[99]
+	Term: payload[100]
+	Term: payload[101]
+	Term: payload[102]
+	Term: payload[103]
+	Term: payload[104]
+	Term: payload[105]
+	Term: payload[106]
+	Term: payload[107]
+	Term: payload[108]
+	Term: payload[109]
+	Term: payload[110]
+	Term: payload[111]
+	Term: payload[112]
+	Term: payload[113]
+	Term: payload[114]
+	Term: payload[115]
+	Term: payload[116]
+	Term: payload[117]
+	Term: payload[118]
+	Term: payload[119]
+	Term: payload[120]
+	Term: payload[121]
+	Term: payload[122]
+	Term: payload[123]
+	Term: payload[124]
+	Term: payload[125]
+	Term: payload[126]
+	Term: payload[127]
+	Term: payload[128]
+	Term: payload[129]
+	Term: payload[130]
+	Term: payload[131]
+	Term: payload[132]
+	Term: payload[133]
+	Term: payload[134]
+	Term: payload[135]
+	Term: payload[136]
+	Term: payload[137]
+	Term: payload[138]
+	Term: payload[139]
+	Term: payload[140]
+	Term: payload[141]
+	Term: payload[142]
+	Term: payload[143]
+	Term: payload[144]
+	Term: payload[145]
+	Term: payload[146]
+	Term: payload[147]
+	Term: payload[148]
+	Term: payload[149]
+	Term: payload[150]
+	Term: payload[151]
+	Term: payload[152]
+	Term: payload[153]
+	Term: payload[154]
+	Term: payload[155]
+	Term: payload[156]
+	Term: payload[157]
+	Term: payload[158]
+	Term: payload[159]
+	Term: payload[160]
+	Term: payload[161]
+	Term: payload[162]
+	Term: payload[163]
+	Term: payload[164]
+	Term: payload[165]
+	Term: payload[166]
+	Term: payload[167]
+	Term: payload[168]
+	Term: payload[169]
+	Term: payload[170]
+	Term: payload[171]
+	Term: payload[172]
+	Term: payload[173]
+	Term: payload[174]
+	Term: payload[175]
+	Term: payload[176]
+	Term: payload[177]
+	Term: payload[178]
+	Term: payload[179]
+	Term: payload[180]
+	Term: payload[181]
+	Term: payload[182]
+	Term: payload[183]
+	Term: payload[184]
+	Term: payload[185]
+	Term: payload[186]
+	Term: payload[187]
+	Term: payload[188]
+	Term: payload[189]
+	Term: payload[190]
+	Term: payload[191]
+	Term: payload[192]
+	Term: payload[193]
+	Term: payload[194]
+	Term: payload[195]
+	Term: payload[196]
+	Term: payload[197]
+	Term: payload[198]
+	Term: payload[199]
+	Term: payload[200]
+	Term: payload[201]
+	Term: payload[202]
+	Term: payload[203]
+	Term: payload[204]
+	Term: payload[205]
+	Term: payload[206]
+	Term: payload[207]
+	Term: payload[208]
+	Term: payload[209]
+	Term: payload[210]
+	Term: payload[211]
+	Term: payload[212]
+	Term: payload[213]
+	Term: payload[214]
+	Term: payload[215]
+	Term: payload[216]
+	Term: payload[217]
+	Term: payload[218]
+	Term: payload[219]
+	Term: payload[220]
+	Term: payload[221]
+	Term: payload[222]
+	Term: payload[223]
+	Term: payload[224]
+	Term: payload[225]
+	Term: payload[226]
+	Term: payload[227]
+	Term: payload[228]
+	Term: payload[229]
+	Term: payload[230]
+	Term: payload[231]
+	Term: payload[232]
+	Term: payload[233]
+	Term: payload[234]
+	Term: payload[235]
+	Term: payload[236]
+	Term: payload[237]
+	Term: payload[238]
+	Term: payload[239]
+	Term: payload[240]
+	Term: payload[241]
+	Term: payload[242]
+	Term: payload[243]
+	Term: payload[244]
+	Term: payload[245]
+	Term: payload[246]
+	Term: payload[247]
+	Term: payload[248]
+	Term: payload[249]
+	Term: payload[250]
+	Term: payload[251]
+	Term: payload[252]
+	Term: payload[253]
+	Term: payload[254]
+	Term: payload[255]
+	Term: done
+	Term: tready
+	Term: valid
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (325) is greater than number of available sites (200).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 200 sites available on device, but needs 259 sites.
+	Term: payload[0]
+	Term: payload[1]
+	Term: payload[2]
+	Term: payload[3]
+	Term: payload[4]
+	Term: payload[5]
+	Term: payload[6]
+	Term: payload[7]
+	Term: payload[8]
+	Term: payload[9]
+	Term: payload[10]
+	Term: payload[11]
+	Term: payload[12]
+	Term: payload[13]
+	Term: payload[14]
+	Term: payload[15]
+	Term: payload[16]
+	Term: payload[17]
+	Term: payload[18]
+	Term: payload[19]
+	Term: payload[20]
+	Term: payload[21]
+	Term: payload[22]
+	Term: payload[23]
+	Term: payload[24]
+	Term: payload[25]
+	Term: payload[26]
+	Term: payload[27]
+	Term: payload[28]
+	Term: payload[29]
+	Term: payload[30]
+	Term: payload[31]
+	Term: payload[32]
+	Term: payload[33]
+	Term: payload[34]
+	Term: payload[35]
+	Term: payload[36]
+	Term: payload[37]
+	Term: payload[38]
+	Term: payload[39]
+	Term: payload[40]
+	Term: payload[41]
+	Term: payload[42]
+	Term: payload[43]
+	Term: payload[44]
+	Term: payload[45]
+	Term: payload[46]
+	Term: payload[47]
+	Term: payload[48]
+	Term: payload[49]
+	Term: payload[50]
+	Term: payload[51]
+	Term: payload[52]
+	Term: payload[53]
+	Term: payload[54]
+	Term: payload[55]
+	Term: payload[56]
+	Term: payload[57]
+	Term: payload[58]
+	Term: payload[59]
+	Term: payload[60]
+	Term: payload[61]
+	Term: payload[62]
+	Term: payload[63]
+	Term: payload[64]
+	Term: payload[65]
+	Term: payload[66]
+	Term: payload[67]
+	Term: payload[68]
+	Term: payload[69]
+	Term: payload[70]
+	Term: payload[71]
+	Term: payload[72]
+	Term: payload[73]
+	Term: payload[74]
+	Term: payload[75]
+	Term: payload[76]
+	Term: payload[77]
+	Term: payload[78]
+	Term: payload[79]
+	Term: payload[80]
+	Term: payload[81]
+	Term: payload[82]
+	Term: payload[83]
+	Term: payload[84]
+	Term: payload[85]
+	Term: payload[86]
+	Term: payload[87]
+	Term: payload[88]
+	Term: payload[89]
+	Term: payload[90]
+	Term: payload[91]
+	Term: payload[92]
+	Term: payload[93]
+	Term: payload[94]
+	Term: payload[95]
+	Term: payload[96]
+	Term: payload[97]
+	Term: payload[98]
+	Term: payload[99]
+	Term: payload[100]
+	Term: payload[101]
+	Term: payload[102]
+	Term: payload[103]
+	Term: payload[104]
+	Term: payload[105]
+	Term: payload[106]
+	Term: payload[107]
+	Term: payload[108]
+	Term: payload[109]
+	Term: payload[110]
+	Term: payload[111]
+	Term: payload[112]
+	Term: payload[113]
+	Term: payload[114]
+	Term: payload[115]
+	Term: payload[116]
+	Term: payload[117]
+	Term: payload[118]
+	Term: payload[119]
+	Term: payload[120]
+	Term: payload[121]
+	Term: payload[122]
+	Term: payload[123]
+	Term: payload[124]
+	Term: payload[125]
+	Term: payload[126]
+	Term: payload[127]
+	Term: payload[128]
+	Term: payload[129]
+	Term: payload[130]
+	Term: payload[131]
+	Term: payload[132]
+	Term: payload[133]
+	Term: payload[134]
+	Term: payload[135]
+	Term: payload[136]
+	Term: payload[137]
+	Term: payload[138]
+	Term: payload[139]
+	Term: payload[140]
+	Term: payload[141]
+	Term: payload[142]
+	Term: payload[143]
+	Term: payload[144]
+	Term: payload[145]
+	Term: payload[146]
+	Term: payload[147]
+	Term: payload[148]
+	Term: payload[149]
+	Term: payload[150]
+	Term: payload[151]
+	Term: payload[152]
+	Term: payload[153]
+	Term: payload[154]
+	Term: payload[155]
+	Term: payload[156]
+	Term: payload[157]
+	Term: payload[158]
+	Term: payload[159]
+	Term: payload[160]
+	Term: payload[161]
+	Term: payload[162]
+	Term: payload[163]
+	Term: payload[164]
+	Term: payload[165]
+	Term: payload[166]
+	Term: payload[167]
+	Term: payload[168]
+	Term: payload[169]
+	Term: payload[170]
+	Term: payload[171]
+	Term: payload[172]
+	Term: payload[173]
+	Term: payload[174]
+	Term: payload[175]
+	Term: payload[176]
+	Term: payload[177]
+	Term: payload[178]
+	Term: payload[179]
+	Term: payload[180]
+	Term: payload[181]
+	Term: payload[182]
+	Term: payload[183]
+	Term: payload[184]
+	Term: payload[185]
+	Term: payload[186]
+	Term: payload[187]
+	Term: payload[188]
+	Term: payload[189]
+	Term: payload[190]
+	Term: payload[191]
+	Term: payload[192]
+	Term: payload[193]
+	Term: payload[194]
+	Term: payload[195]
+	Term: payload[196]
+	Term: payload[197]
+	Term: payload[198]
+	Term: payload[199]
+	Term: payload[200]
+	Term: payload[201]
+	Term: payload[202]
+	Term: payload[203]
+	Term: payload[204]
+	Term: payload[205]
+	Term: payload[206]
+	Term: payload[207]
+	Term: payload[208]
+	Term: payload[209]
+	Term: payload[210]
+	Term: payload[211]
+	Term: payload[212]
+	Term: payload[213]
+	Term: payload[214]
+	Term: payload[215]
+	Term: payload[216]
+	Term: payload[217]
+	Term: payload[218]
+	Term: payload[219]
+	Term: payload[220]
+	Term: payload[221]
+	Term: payload[222]
+	Term: payload[223]
+	Term: payload[224]
+	Term: payload[225]
+	Term: payload[226]
+	Term: payload[227]
+	Term: payload[228]
+	Term: payload[229]
+	Term: payload[230]
+	Term: payload[231]
+	Term: payload[232]
+	Term: payload[233]
+	Term: payload[234]
+	Term: payload[235]
+	Term: payload[236]
+	Term: payload[237]
+	Term: payload[238]
+	Term: payload[239]
+	Term: payload[240]
+	Term: payload[241]
+	Term: payload[242]
+	Term: payload[243]
+	Term: payload[244]
+	Term: payload[245]
+	Term: payload[246]
+	Term: payload[247]
+	Term: payload[248]
+	Term: payload[249]
+	Term: payload[250]
+	Term: payload[251]
+	Term: payload[252]
+	Term: payload[253]
+	Term: payload[254]
+	Term: payload[255]
+	Term: done
+	Term: tready
+	Term: valid
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 33 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   200 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cb8db039
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1091.324 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: cb8db039
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1091.324 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: cb8db039
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1091.324 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 22:28:21 2022...

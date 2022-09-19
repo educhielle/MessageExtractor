@@ -2,13 +2,13 @@
 // Author: Eduardo Chielle
 
 
-module MessageExtractor #(parameter N_BYTES=32)(
+module MessageExtractor #(parameter LOG_BITS=8)(
     clock, reset,
     tvalid, tready, tdata, tlast,
     valid, payload, done
 );
 
-localparam N_BITS = N_BYTES << 3;
+localparam N_BITS = 1 << LOG_BITS;
 
 input wire clock;
 input wire reset;
@@ -37,7 +37,7 @@ Extractor extractor(
     ext_valid, ext_payload, ext_keep, ext_divider, ext_last, ext_done
 );
 
-Binder binder(
+Binder #(LOG_BITS) binder(
     clock, reset,
     ext_valid, ext_payload, ext_keep, ext_divider, ext_last, ext_done,
     valid, payload, done

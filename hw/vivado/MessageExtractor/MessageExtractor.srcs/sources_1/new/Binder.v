@@ -2,15 +2,14 @@
 // Author: Eduardo Chielle
 
 
-module Binder #(parameter N_BYTES=32)(
+module Binder #(parameter LOG_BITS=8)(
     clock, reset,
     ext_valid, ext_payload, ext_keep, ext_divider, ext_last, ext_done,
     valid, payload, done
 );
 
-localparam N_BITS = N_BYTES << 3;
+localparam N_BITS = 1 << LOG_BITS;
 localparam WIDTH = 8; // bytes
-localparam LOG_BITS = $clog2(N_BITS);
 
 input wire clock;
 input wire reset;

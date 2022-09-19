@@ -3,8 +3,8 @@
 module MessageExtractor_tb();
 
 localparam CLOCK_PERIOD = 10;
-localparam N_BYTES = 32;
-localparam N_BITS = N_BYTES << 3;
+localparam LOG_BITS = 8;
+localparam N_BITS = 1 << LOG_BITS;
 
 reg clock;
 reg reset;
@@ -18,7 +18,7 @@ wire valid;
 wire[N_BITS-1:0] payload;
 wire done;
 
-MessageExtractor #(N_BYTES) messageExtractor(
+MessageExtractor #(LOG_BITS) messageExtractor(
     clock, reset,
     tvalid, tready, tdata, tlast,
     valid, payload, done

@@ -2,13 +2,13 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Mon Sep 19 20:35:19 2022
-# Process ID: 2008
-# Current directory: G:/My Drive/MessageExtractor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1152 G:\My Drive\MessageExtractor\MessageExtractor.xpr
-# Log file: G:/My Drive/MessageExtractor/vivado.log
-# Journal file: G:/My Drive/MessageExtractor\vivado.jou
+# Start of session at: Mon Sep 19 22:44:02 2022
+# Process ID: 8476
+# Current directory: C:/Projects/MessageExtractor/MessageExtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8220 C:\Projects\MessageExtractor\MessageExtractor\MessageExtractor.xpr
+# Log file: C:/Projects/MessageExtractor/MessageExtractor/vivado.log
+# Journal file: C:/Projects/MessageExtractor/MessageExtractor\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {G:/My Drive/MessageExtractor/MessageExtractor.xpr}
+open_project C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.xpr
 update_compile_order -fileset sources_1

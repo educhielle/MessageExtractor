@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Sep 19 22:15:48 2022
+# Process ID: 4588
+# Current directory: C:/Projects/MessageExtractor/MessageExtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8476 C:\Projects\MessageExtractor\MessageExtractor\MessageExtractor.xpr
+# Log file: C:/Projects/MessageExtractor/MessageExtractor/vivado.log
+# Journal file: C:/Projects/MessageExtractor/MessageExtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+file mkdir C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1
+file mkdir C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new
+close [ open C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new/const.xdc w ]
+add_files -fileset constrs_1 C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new/const.xdc
+set_property target_constrs_file C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/constrs_1/new/const.xdc [current_fileset -constrset]
+refresh_design
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+set_property board_part xilinx.com:zc706:part0:1.4 [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property board_part xilinx.com:kc705:part0:1.5 [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property board_part xilinx.com:vc709:part0:1.8 [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+close_sim
+close_design
+reset_simulation -simset sim_Extractor -mode behavioral
+launch_simulation -simset sim_Extractor
+source Extractor_tb.tcl
+close_sim
+reset_simulation -simset sim_Extractor -mode behavioral
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+reset_simulation -simset sim_Extractor -mode behavioral
+reset_simulation -simset sim_MessageExtractor -mode behavioral

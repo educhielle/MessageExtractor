@@ -24,5 +24,5 @@ g++ test_binder.cpp binder.cpp extractor.cpp generator.cpp && ./a.out
 
 Optionally, one can run with different constants, for example:
 ```
-g++ -O2 test_binder.cpp binder.cpp extractor.cpp generator.cpp -DMAX_MESSAGE_COUNT=1024 -DMAX_MESSAGE_LENGTH=64 -DNSTREAMS=8 && ./a.out
+g++ -O2 test_binder.cpp binder.cpp extractor.cpp generator.cpp -DMAX_MESSAGE_COUNT=1024 -DMAX_MESSAGE_LENGTH=64 -DN_STREAMS=8 && ./a.out
 ```

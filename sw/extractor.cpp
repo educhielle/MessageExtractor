@@ -33,7 +33,12 @@ ExtractorOutput extract(bool valid, uint64_t data, bool last)
         if (!state.msgCount) // beginning of package
         {
             state.msgCount = get<int16_t>(data, WIDTH-2, WIDTH-1); // get message count
-            if (!state.msgCount) return ExtractorOutput(); // the message count informed is zero
+            if (!state.msgCount) // the message count informed is zero
+            {
+                ExtractorOutput output; // no valid input
+                if (DEBUG) cout << "!! | " << state << " | " << output << '\n';
+                return output;
+            }
 
             state.msgLength = get<int16_t>(data, WIDTH-4, WIDTH-3); // get message length
             if (DEBUG) cout << "1D | " << state << flush;

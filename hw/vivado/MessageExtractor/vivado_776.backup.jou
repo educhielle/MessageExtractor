@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Sep 19 18:44:04 2022
+# Process ID: 776
+# Current directory: C:/Projects/MessageExtractor/MessageExtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3932 C:\Projects\MessageExtractor\MessageExtractor\MessageExtractor.xpr
+# Log file: C:/Projects/MessageExtractor/MessageExtractor/vivado.log
+# Journal file: C:/Projects/MessageExtractor/MessageExtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.xpr
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation -simset sim_MessageExtractor
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+launch_simulation -simset sim_MessageExtractor
+source MessageExtractor_tb.tcl
+relaunch_sim
+close_sim
+reset_simulation -simset sim_MessageExtractor -mode behavioral

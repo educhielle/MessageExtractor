@@ -1,0 +1,1246 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Sep 19 18:44:04 2022
+# Process ID: 776
+# Current directory: C:/Projects/MessageExtractor/MessageExtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3932 C:\Projects\MessageExtractor\MessageExtractor\MessageExtractor.xpr
+# Log file: C:/Projects/MessageExtractor/MessageExtractor/vivado.log
+# Journal file: C:/Projects/MessageExtractor/MessageExtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 736.672 ; gain = 74.688
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net valid is not permitted [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 51.555 ; gain = 1.574
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 18:49:42 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 770.719 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 810.383 ; gain = 39.664
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 810.383 ; gain = 0.000
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.309 ; gain = 1.125
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 18:53:02 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 810.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 810.383 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 828.680 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 828.680 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 51.559 ; gain = 0.957
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:21:19 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 872.758 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 872.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+ERROR: [VRFC 10-1412] syntax error near begin [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:39]
+WARNING: [VRFC 10-2096] empty statement in always construct [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:39]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:40]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:41]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:42]
+ERROR: [VRFC 10-1412] syntax error near = [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:43]
+WARNING: [VRFC 10-1771] potential always loop found [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:39]
+ERROR: [VRFC 10-60] reset is not a constant [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:40]
+ERROR: [VRFC 10-51] path is an unknown type [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:40]
+ERROR: [VRFC 10-60] first is not a constant [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:41]
+ERROR: [VRFC 10-51] path is an unknown type [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:41]
+ERROR: [VRFC 10-60] ext_divider is not a constant [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:42]
+ERROR: [VRFC 10-51] path is an unknown type [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:42]
+ERROR: [VRFC 10-51] path is an unknown type [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:43]
+ERROR: [VRFC 10-1040] module Binder ignored due to previous errors [C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v:5]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.289 ; gain = 1.293
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:25:32 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 872.758 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 150 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 872.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 51.637 ; gain = 0.746
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:32:29 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 872.758 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 60 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 95
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 872.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.258 ; gain = 0.668
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:40:11 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 872.758 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 872.758 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 872.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 51.426 ; gain = 1.324
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:47:08 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 876.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 876.195 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 876.195 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 876.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.305 ; gain = 0.895
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 19:57:13 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 881.867 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 881.867 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.516 ; gain = 1.141
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 20:00:58 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 881.867 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 881.867 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 51.406 ; gain = 0.949
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 20:16:13 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 881.867 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 70 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 881.867 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 160 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 160 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -simset sim_MessageExtractor
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Binder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/Extractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sources_1/new/MessageExtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MessageExtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Extractor
+Compiling module xil_defaultlib.Binder_default
+Compiling module xil_defaultlib.MessageExtractor_default
+Compiling module xil_defaultlib.MessageExtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MessageExtractor_tb_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim/xsim.dir/MessageExtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 51.473 ; gain = 0.902
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 20:31:07 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MessageExtractor_tb_behav -key {Behavioral:sim_MessageExtractor:Functional:MessageExtractor_tb} -tclbatch {MessageExtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source MessageExtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MessageExtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 881.867 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 881.867 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_MessageExtractor'
+INFO: [SIM-utils-54] Inspecting design source files for 'MessageExtractor_tb' in fileset 'sim_MessageExtractor'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_MessageExtractor'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+"xvlog --incr --relax -prj MessageExtractor_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.sim/sim_MessageExtractor/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 4f79f3e5499e480eac9d62960f77503e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MessageExtractor_tb_behav xil_defaultlib.MessageExtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+$finish called at time : 160 ns : File "C:/Projects/MessageExtractor/MessageExtractor/MessageExtractor.srcs/sim_MessageExtractor/new/MessageExtractor_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 881.867 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_MessageExtractor -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 20:33:23 2022...

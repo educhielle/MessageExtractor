@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #include <iostream>
 #include <iomanip>
 #include "generator.h"

@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #pragma once
 
 #include <vector>

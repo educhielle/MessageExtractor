@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #pragma once
 
 namespace generator
@@ -8,20 +10,16 @@ namespace generator
 #define MAX_MESSAGE_COUNT 150
 #endif
 
-#ifndef MAX_MESSAGE_LENTH
-#define MAX_MESSAGE_LENTH 32
-#endif
-
-#ifndef MAX_TOTAL_PAYLOAD
-#define MAX_TOTAL_PAYLOAD 1200
+#ifndef MAX_MESSAGE_LENGTH
+#define MAX_MESSAGE_LENGTH 32
 #endif
 
 #ifndef MIN_MESSAGE_COUNT
 #define MIN_MESSAGE_COUNT 0
 #endif
 
-#ifndef MIN_MESSAGE_LENTH
-#define MIN_MESSAGE_LENTH 8
+#ifndef MIN_MESSAGE_LENGTH
+#define MIN_MESSAGE_LENGTH 8
 #endif
 
 #ifndef WIDTH

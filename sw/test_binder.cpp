@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #ifndef N_STREAMS
 #define N_STREAMS 1
 #endif

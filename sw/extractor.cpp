@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #include "extractor.h"
 
 #include <iomanip>

@@ -1,3 +1,5 @@
+// Author: Eduardo Chielle
+
 #include "generator.h"
 
 #include <iomanip>
@@ -39,7 +41,7 @@ ByteStream generatePayload()
     bs.messageCount = messageCount;
     while (messageCount--)
     {
-        auto messageLength = randomValue<uint16_t>(MIN_MESSAGE_LENTH, MAX_MESSAGE_LENTH);
+        auto messageLength = randomValue<uint16_t>(MIN_MESSAGE_LENGTH, MAX_MESSAGE_LENGTH);
         bs.messageLengths.push_back(messageLength);
         bs.payloads.push_back(vector<uint8_t>());
         while (messageLength--)
